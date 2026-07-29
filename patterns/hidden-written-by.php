@@ -6,7 +6,7 @@
  *
  * @package    WordPress
  * @subpackage Twenty_Twenty_Five
- * @since      txyz 2025 » Main Theme 1.0
+ * @since      txyz » Main Theme 1.0
  */
 
 ?>

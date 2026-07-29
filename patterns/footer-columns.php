@@ -8,7 +8,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since txyz 2025 » Main Theme 1.0
+ * @since txyz » Main Theme 1.0
  */
 
 ?>
@@ -63,7 +63,7 @@
 		<!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 		<div class="wp-block-group alignfull">
 			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size"><?php esc_html_e( 'txyz 2025 » Main Theme', 'txyz-main-theme' ); ?></p>
+			<p class="has-small-font-size"><?php esc_html_e( 'txyz » Main Theme', 'txyz-main-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size">

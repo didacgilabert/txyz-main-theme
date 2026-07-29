@@ -11,7 +11,7 @@
  *
  * @package WordPress
  * @subpackage Twenty_Twenty_Five
- * @since txyz 2025 » Main Theme 1.0
+ * @since txyz » Main Theme 1.0
  */
 
 ?>
@@ -223,7 +223,7 @@
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size"><?php esc_html_e( 'txyz 2025 » Main Theme', 'txyz-main-theme' ); ?></p>
+			<p class="has-small-font-size"><?php esc_html_e( 'txyz » Main Theme', 'txyz-main-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size"><?php esc_html_e( 'email@example.com', 'txyz-main-theme' ); ?><br><?php echo esc_html_x( '+1 555 349 1806', 'Phone number.', 'txyz-main-theme' ); ?></p>

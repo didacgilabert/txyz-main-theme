@@ -1,4 +1,4 @@
-== txyz 2025 » Main Theme ==
+== txyz » Main Theme ==
 
 Contributors: d.g.
 Requires at least: 6.7
@@ -16,8 +16,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Copyright ==
 
-txyz 2025 » Main Theme WordPress Theme, (C) 2025 d.g.
-txyz 2025 » Main Theme is distributed under the terms of the GNU GPL.
+txyz » Main Theme WordPress Theme, (C) 2025 d.g.
+txyz » Main Theme is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -30,5 +30,5 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 
-txyz 2025 » Main Theme is based on txyz 2025 » Subdomain Base Theme (http://troposfera.xyz), (C) d.g., [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
+txyz » Main Theme is based on txyz 2025 » Subdomain Base Theme (http://troposfera.xyz), (C) d.g., [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 

@@ -1,0 +1,87 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Body"},"style":{"spacing":{"padding":{"right":"var:preset|spacing|edge","left":"var:preset|spacing|edge","top":"var:preset|spacing|body-gap","bottom":"var:preset|spacing|body-gap"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--body-gap);padding-right:var(--wp--preset--spacing--edge);padding-bottom:var(--wp--preset--spacing--body-gap);padding-left:var(--wp--preset--spacing--edge)"><!-- wp:group {"metadata":{"name":"Content Header"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|70","padding":{"bottom":"var:preset|spacing|block-gap"}}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide" style="padding-bottom:var(--wp--preset--spacing--block-gap)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:columns {"style":{"spacing":{"padding":{"bottom":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-columns" style="padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:column {"verticalAlignment":"bottom","width":"75%"} -->
+<div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:75%"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group alignwide"><!-- wp:paragraph {"fontSize":"x-large"} -->
+<p class="has-x-large-font-size">Ecosystem</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:post-title {"textAlign":"left","level":1,"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"huge"} /-->
+
+<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+<div class="wp-block-group alignwide"><!-- wp:post-terms {"term":"collaborate-as"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"25%","style":{"spacing":{"blockGap":"0px"}}} -->
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:post-featured-image {"align":"wide"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Content + Relateds"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:post-content {"layout":{"type":"default"}} /-->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Projects featuring this collaborator</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"layout":{"type":"grid"}} -->
+<div class="wp-block-group"><!-- wp:pods/pods-block-related-list {"related_field":"collaborate_in_work_like","template":{"label":"collaborators-related-projects","value":"collaborators-related-projects"},"not_found":"No Work"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid"}} -->
+<div class="wp-block-group"><!-- wp:pods/pods-block-related-list {"related_field":"collaborate_in_workshops_like","template":{"label":"collaborators-related-projects","value":"collaborators-related-projects"},"not_found":";)"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"grid"}} -->
+<div class="wp-block-group"><!-- wp:pods/pods-block-related-list {"related_field":"collaborate_in_labs_like","template":{"label":"collaborators-related-projects","value":"collaborators-related-projects"},"not_found":"No Labs"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap"}} -->
+<div class="wp-block-group"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Stop Stick"},"align":"wide","className":"stop-stick","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide stop-stick"><!-- wp:query-pagination {"align":"wide","className":"alignwide is-style-tove-vertical-separators","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:post-navigation-link {"type":"previous","showTitle":true} /-->
+
+<!-- wp:post-navigation-link {"showTitle":true} /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"75%"} -->
+<div class="wp-block-column" style="flex-basis:75%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"25%","metadata":{"name":"Dynamic Sidebar With Relateds"},"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-column" style="flex-basis:25%"><!-- wp:senff/sticky-block {"topSpace":60,"minWidth":720,"pushUp":".stop-stick"} -->
+<div class="wp-block-senff-sticky-block" data-topspace="60" data-cfa="true" data-minwidth="720" data-maxwidth="99999" data-pushup=".stop-stick" data-zindex="1"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"blog-related-projects"},"className":"blog-related-projects","layout":{"type":"default"}} -->
+<div class="wp-block-group blog-related-projects"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"blog-related-highly"},"className":"blog-related-highly","layout":{"type":"default"}} -->
+<div class="wp-block-group blog-related-highly"></div>
+<!-- /wp:group -->
+
+<!-- wp:shortcode -->
+[newsletter_form form="5"]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group --></div>
+<!-- /wp:senff/sticky-block --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer-for-blog","area":"footer"} /-->

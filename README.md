@@ -1,7 +1,7 @@
 # txyz-main-theme
 
 Tema de blocs del lloc principal de troposfera.xyz, amb edició completa del
-lloc. Ve de `txyz-2025-main-theme`, que es queda al costat com a còpia de
+lloc. Ve de `txyz-main-theme`, que es queda al costat com a còpia de
 seguretat i fora del repositori fins que aquest estigui actiu al WordPress.
 
 ## Requisits
@@ -39,5 +39,5 @@ El nom de la carpeta va pla perquè els scripts i el desplegament no s'ennuegin
 amb espais ni caràcters especials. El `»` viu al `Theme Name:` de la capçalera,
 que és el que es veu a l'escriptori de WordPress.
 
-El `Text Domain:` encara diu `txyz-2025-main-theme`. Canviar-lo vol repassar
+El `Text Domain:` encara diu `txyz-main-theme`. Canviar-lo vol repassar
 abans si el tema té textos traduïts que hi apuntin.
