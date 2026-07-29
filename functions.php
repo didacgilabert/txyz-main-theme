@@ -1,6 +1,6 @@
 <?php
 /**
- * txyz 2025 » Main Theme functions and definitions.
+ * txyz » Main Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
