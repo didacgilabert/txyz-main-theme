@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Right-aligned blog, 404
- * Slug: txyz-2025-main-theme/template-404-vertical-header-blog
+ * Slug: txyz-main-theme/template-404-vertical-header-blog
  * Template Types: 404
  * Viewport width: 1400
  *
@@ -26,7 +26,7 @@
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
 
-			<!-- wp:pattern {"slug":"txyz-2025-main-theme/hidden-404"} /-->
+			<!-- wp:pattern {"slug":"txyz-main-theme/hidden-404"} /-->
 
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>

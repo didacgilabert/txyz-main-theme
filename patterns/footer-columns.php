@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer with columns
- * Slug: txyz-2025-main-theme/footer-columns
+ * Slug: txyz-main-theme/footer-columns
  * Categories: footer
  * Block Types: core/template-part/footer
  * Description: Footer columns with title, tagline and links.
@@ -30,26 +30,26 @@
 				<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group" style="padding-right:0;padding-left:0">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} -->
-					<h3 class="wp-block-heading has-medium-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Stories', 'txyz-2025-main-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-medium-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Stories', 'txyz-main-theme' ); ?></h3>
 					<!-- /wp:heading -->
-					<!-- wp:navigation {"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"<?php esc_attr_e( 'Stories', 'txyz-2025-main-theme' ); ?>"} -->
-						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog', 'txyz-2025-main-theme' ); ?>","url":"#"} /-->
-						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'txyz-2025-main-theme' ); ?>","url":"#"} /-->
-						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'FAQs', 'txyz-2025-main-theme' ); ?>","url":"#"} /-->
-						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Authors', 'txyz-2025-main-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation {"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"<?php esc_attr_e( 'Stories', 'txyz-main-theme' ); ?>"} -->
+						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog', 'txyz-main-theme' ); ?>","url":"#"} /-->
+						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'About', 'txyz-main-theme' ); ?>","url":"#"} /-->
+						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'FAQs', 'txyz-main-theme' ); ?>","url":"#"} /-->
+						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Authors', 'txyz-main-theme' ); ?>","url":"#"} /-->
 					<!-- /wp:navigation -->
 				</div>
 				<!-- /wp:group -->
 				<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group" style="padding-right:0;padding-left:0">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"medium"} -->
-					<h3 class="wp-block-heading has-medium-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html_x( 'Fleurs', 'Example brand name.', 'txyz-2025-main-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-medium-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html_x( 'Fleurs', 'Example brand name.', 'txyz-main-theme' ); ?></h3>
 					<!-- /wp:heading -->
-					<!-- wp:navigation {"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"<?php esc_attr_e( 'Featured', 'txyz-2025-main-theme' ); ?>"} -->
-						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Events', 'txyz-2025-main-theme' ); ?>","url":"#"} /-->
-						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Shop', 'txyz-2025-main-theme' ); ?>","url":"#"} /-->
-						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Patterns', 'txyz-2025-main-theme' ); ?>","url":"#"} /-->
-						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Themes', 'txyz-2025-main-theme' ); ?>","url":"#"} /-->
+					<!-- wp:navigation {"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"<?php esc_attr_e( 'Featured', 'txyz-main-theme' ); ?>"} -->
+						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Events', 'txyz-main-theme' ); ?>","url":"#"} /-->
+						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Shop', 'txyz-main-theme' ); ?>","url":"#"} /-->
+						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Patterns', 'txyz-main-theme' ); ?>","url":"#"} /-->
+						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Themes', 'txyz-main-theme' ); ?>","url":"#"} /-->
 					<!-- /wp:navigation -->
 				</div>
 				<!-- /wp:group -->
@@ -63,15 +63,15 @@
 		<!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 		<div class="wp-block-group alignfull">
 			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size"><?php esc_html_e( 'txyz 2025 » Main Theme', 'txyz-2025-main-theme' ); ?></p>
+			<p class="has-small-font-size"><?php esc_html_e( 'txyz 2025 » Main Theme', 'txyz-main-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size">
 			<?php
 			printf(
 				/* translators: Designed with WordPress. %s: WordPress link. */
-				esc_html__( 'Designed with %s', 'txyz-2025-main-theme' ),
-				'<a href="' . esc_url( __( 'https://wordpress.org', 'txyz-2025-main-theme' ) ) . '" rel="nofollow">WordPress</a>'
+				esc_html__( 'Designed with %s', 'txyz-main-theme' ),
+				'<a href="' . esc_url( __( 'https://wordpress.org', 'txyz-main-theme' ) ) . '" rel="nofollow">WordPress</a>'
 			);
 			?>
 			</p>

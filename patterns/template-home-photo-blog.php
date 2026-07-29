@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Photo blog home
- * Slug: txyz-2025-main-theme/template-home-photo-blog
+ * Slug: txyz-main-theme/template-home-photo-blog
  * Template Types: front-page, index, home
  * Viewport width: 1400
  * Inserter: no
@@ -19,14 +19,14 @@
 	<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 	<div class="wp-block-group">
 		<!-- wp:heading {"textAlign":"center","level":1,"className":"is-style-text-annotation"} -->
-		<h1 class="wp-block-heading has-text-align-center is-style-text-annotation"><?php esc_html_e( 'Stories', 'txyz-2025-main-theme' ); ?></h1>
+		<h1 class="wp-block-heading has-text-align-center is-style-text-annotation"><?php esc_html_e( 'Stories', 'txyz-main-theme' ); ?></h1>
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
 	<!-- wp:heading {"textAlign":"center","align":"wide","fontSize":"xx-large"} -->
-	<h2 class="wp-block-heading alignwide has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'Tell your story', 'txyz-2025-main-theme' ); ?></h2>
+	<h2 class="wp-block-heading alignwide has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'Tell your story', 'txyz-main-theme' ); ?></h2>
 	<!-- /wp:heading -->
-	<!-- wp:pattern {"slug":"txyz-2025-main-theme/template-query-loop-photo-blog"} /-->
+	<!-- wp:pattern {"slug":"txyz-main-theme/template-query-loop-photo-blog"} /-->
 </main>
 <!-- /wp:group -->
 

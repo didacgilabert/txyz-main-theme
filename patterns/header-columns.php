@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header with columns
- * Slug: txyz-2025-main-theme/header-columns
+ * Slug: txyz-main-theme/header-columns
  * Categories: header
  * Block Types: core/template-part/header
  * Description: Header with site title and navigation in columns.

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Photo blog archive
- * Slug: txyz-2025-main-theme/template-archive-photo-blog
+ * Slug: txyz-main-theme/template-archive-photo-blog
  * Template Types: archive
  * Viewport width: 1400
  * Inserter: no
@@ -19,7 +19,7 @@
 <main class="wp-block-group" style="margin-top:var(--wp--preset--spacing--60)">
 	<!-- wp:query-title {"type":"archive","textAlign":"center"} /-->
 	<!-- wp:term-description {"textAlign":"center"} /-->
-	<!-- wp:pattern {"slug":"txyz-2025-main-theme/template-query-loop-photo-blog"} /-->
+	<!-- wp:pattern {"slug":"txyz-main-theme/template-query-loop-photo-blog"} /-->
 </main>
 <!-- /wp:group -->
 

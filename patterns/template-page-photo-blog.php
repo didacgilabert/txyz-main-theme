@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Photo blog page
- * Slug: txyz-2025-main-theme/template-page-photo-blog
+ * Slug: txyz-main-theme/template-page-photo-blog
  * Template Types: page
  * Viewport width: 1400
  *

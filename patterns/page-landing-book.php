@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Landing page for book
- * Slug: txyz-2025-main-theme/page-landing-book
- * Categories: txyz_2025_main_theme_page, featured
+ * Slug: txyz-main-theme/page-landing-book
+ * Categories: txyz_main_theme_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -16,9 +16,9 @@
 
 ?>
 
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/hero-book"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/cta-book-links"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/banner-about-book"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/cta-book-locations"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/text-faqs"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/cta-newsletter"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/hero-book"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/cta-book-links"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/banner-about-book"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/cta-book-locations"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/text-faqs"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/cta-newsletter"} /-->

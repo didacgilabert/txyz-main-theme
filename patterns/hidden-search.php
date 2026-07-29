@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Search
- * Slug: txyz-2025-main-theme/hidden-search
+ * Slug: txyz-main-theme/hidden-search
  * Inserter: no
  *
  * @package WordPress
@@ -11,4 +11,4 @@
 
 ?>
 
-<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'Search form label.', 'txyz-2025-main-theme' ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr_x( 'Type here...', 'Search input field placeholder text.', 'txyz-2025-main-theme' ); ?>","buttonText":"<?php echo esc_attr_x( 'Search', 'Button text. Verb.', 'txyz-2025-main-theme' ); ?>"} /-->
+<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'Search form label.', 'txyz-main-theme' ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr_x( 'Type here...', 'Search input field placeholder text.', 'txyz-main-theme' ); ?>","buttonText":"<?php echo esc_attr_x( 'Search', 'Button text. Verb.', 'txyz-main-theme' ); ?>"} /-->

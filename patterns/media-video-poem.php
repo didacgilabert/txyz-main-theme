@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Video Poem
- * Slug: txyz-2025-main-theme/media-video-poem
+ * Slug: txyz-main-theme/media-video-poem
  * Categories: media, gallery, featured
  * Viewport width: 1440
  * Description: A grid section with photos and a link to an Instagram profile.

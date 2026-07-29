@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Landing page for podcast
- * Slug: txyz-2025-main-theme/page-landing-podcast
- * Categories: txyz_2025_main_theme_page, featured
+ * Slug: txyz-main-theme/page-landing-podcast
+ * Categories: txyz_main_theme_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -16,8 +16,8 @@
 
 ?>
 
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/hero-podcast"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/heading-and-paragraph-with-image"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/logos"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/grid-videos"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/cta-newsletter"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/hero-podcast"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/heading-and-paragraph-with-image"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/logos"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/grid-videos"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/cta-newsletter"} /-->

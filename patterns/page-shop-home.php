@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Shop homepage
- * Slug: txyz-2025-main-theme/page-shop-home
- * Categories: txyz_2025_main_theme_page
+ * Slug: txyz-main-theme/page-shop-home
+ * Categories: txyz_main_theme_page
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -16,6 +16,6 @@
 
 ?>
 
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/banner-intro-image"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/grid-with-categories"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/media-instagram-grid"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/banner-intro-image"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/grid-with-categories"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/media-instagram-grid"} /-->

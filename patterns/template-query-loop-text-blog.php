@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Text-only blog, posts
- * Slug: txyz-2025-main-theme/template-query-loop-text-blog
+ * Slug: txyz-main-theme/template-query-loop-text-blog
  * Inserter: no
  *
  * @package WordPress
@@ -16,7 +16,7 @@
 	<div class="wp-block-group">
 		<!-- wp:query-no-results {"align":"wide","fontSize":"medium"} -->
 			<!-- wp:paragraph -->
-			<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'txyz-2025-main-theme' ); ?></p>
+			<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'txyz-main-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>

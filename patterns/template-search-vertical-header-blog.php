@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Right-aligned blog, search
- * Slug: txyz-2025-main-theme/template-search-vertical-header-blog
+ * Slug: txyz-main-theme/template-search-vertical-header-blog
  * Template Types: search
  * Viewport width: 1400
  * Inserter: no
@@ -27,11 +27,11 @@
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
 			<!-- wp:query-title {"type":"search","fontSize":"large"} /-->
-			<!-- wp:pattern {"slug":"txyz-2025-main-theme/hidden-search"} /-->
+			<!-- wp:pattern {"slug":"txyz-main-theme/hidden-search"} /-->
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
-			<!-- wp:pattern {"slug":"txyz-2025-main-theme/template-query-loop-vertical-header-blog"} /-->
+			<!-- wp:pattern {"slug":"txyz-main-theme/template-query-loop-vertical-header-blog"} /-->
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->

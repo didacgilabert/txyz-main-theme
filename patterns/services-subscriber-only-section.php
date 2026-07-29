@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Services, subscriber only section
- * Slug: txyz-2025-main-theme/services-subscriber-only-section
+ * Slug: txyz-main-theme/services-subscriber-only-section
  * Categories: call-to-action, services
  * Description: A subscriber-only section highlighting exclusive services and offerings.
  *
@@ -18,29 +18,29 @@
 		<!-- wp:column {"verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center">
 			<!-- wp:heading {"fontSize":"xx-large"} -->
-			<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Subscribe to get unlimited access', 'txyz-2025-main-theme' ); ?></h2>
+			<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'Subscribe to get unlimited access', 'txyz-main-theme' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:list {"className":"is-style-checkmark-list","style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"padding":{"left":"var:preset|spacing|30"}}}} -->
 			<ul style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--30)" class="wp-block-list is-style-checkmark-list">
 				<!-- wp:list-item {"fontSize":"medium"} -->
-				<li class="has-medium-font-size"><?php esc_html_e( 'Get access to our paid articles and weekly newsletter.', 'txyz-2025-main-theme' ); ?></li>
+				<li class="has-medium-font-size"><?php esc_html_e( 'Get access to our paid articles and weekly newsletter.', 'txyz-main-theme' ); ?></li>
 				<!-- /wp:list-item -->
 
 				<!-- wp:list-item {"fontSize":"medium"} -->
-				<li class="has-medium-font-size"><?php esc_html_e( 'Join our IRL events.', 'txyz-2025-main-theme' ); ?></li>
+				<li class="has-medium-font-size"><?php esc_html_e( 'Join our IRL events.', 'txyz-main-theme' ); ?></li>
 				<!-- /wp:list-item -->
 
 				<!-- wp:list-item {"fontSize":"medium"} -->
-				<li class="has-medium-font-size"><?php esc_html_e( 'Get a free tote bag.', 'txyz-2025-main-theme' ); ?></li>
+				<li class="has-medium-font-size"><?php esc_html_e( 'Get a free tote bag.', 'txyz-main-theme' ); ?></li>
 				<!-- /wp:list-item -->
 
 				<!-- wp:list-item {"fontSize":"medium"} -->
-				<li class="has-medium-font-size"><?php esc_html_e( 'An elegant addition of home decor collection.', 'txyz-2025-main-theme' ); ?></li>
+				<li class="has-medium-font-size"><?php esc_html_e( 'An elegant addition of home decor collection.', 'txyz-main-theme' ); ?></li>
 				<!-- /wp:list-item -->
 
 				<!-- wp:list-item {"fontSize":"medium"} -->
-				<li class="has-medium-font-size"><?php esc_html_e( 'Join our forums.', 'txyz-2025-main-theme' ); ?></li>
+				<li class="has-medium-font-size"><?php esc_html_e( 'Join our forums.', 'txyz-main-theme' ); ?></li>
 				<!-- /wp:list-item -->
 			</ul>
 			<!-- /wp:list -->
@@ -48,17 +48,17 @@
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left","flexWrap":"nowrap"}} -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-style-fill"} -->
-				<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Subscribe', 'txyz-2025-main-theme' ); ?></a></div>
+				<div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Subscribe', 'txyz-main-theme' ); ?></a></div>
 				<!-- /wp:button -->
 
 				<!-- wp:button {"className":"is-style-outline"} -->
-				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'View plans', 'txyz-2025-main-theme' ); ?></a></div>
+				<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'View plans', 'txyz-main-theme' ); ?></a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
 
 			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size"><?php esc_html_e( 'Cancel or pause anytime.', 'txyz-2025-main-theme' ); ?></p>
+			<p class="has-small-font-size"><?php esc_html_e( 'Cancel or pause anytime.', 'txyz-main-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:column -->
@@ -66,7 +66,7 @@
 		<!-- wp:column {"verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center">
 			<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/services-subscriber-photo.webp" alt="<?php esc_attr_e( 'Smartphones capturing a scenic wildflower meadow with trees', 'txyz-2025-main-theme' ); ?>"/></figure>
+			<figure class="wp-block-image size-full"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/services-subscriber-photo.webp" alt="<?php esc_attr_e( 'Smartphones capturing a scenic wildflower meadow with trees', 'txyz-main-theme' ); ?>"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

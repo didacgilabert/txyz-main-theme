@@ -10,21 +10,21 @@
  */
 
 // Adds theme support for post formats.
-if ( ! function_exists( 'txyz_2025_main_theme_post_format_setup' ) ) :
-	function txyz_2025_main_theme_post_format_setup() {
+if ( ! function_exists( 'txyz_main_theme_post_format_setup' ) ) :
+	function txyz_main_theme_post_format_setup() {
 		add_theme_support( 'post-formats', array( 'aside', 'audio', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video' ) );
 	}
 endif;
-add_action( 'after_setup_theme', 'txyz_2025_main_theme_post_format_setup' );
+add_action( 'after_setup_theme', 'txyz_main_theme_post_format_setup' );
 
 // Registers custom block styles.
-if ( ! function_exists( 'txyz_2025_main_theme_block_styles' ) ) :
-	function txyz_2025_main_theme_block_styles() {
+if ( ! function_exists( 'txyz_main_theme_block_styles' ) ) :
+	function txyz_main_theme_block_styles() {
 		register_block_style(
 			'core/list',
 			array(
 				'name'         => 'checkmark-list',
-				'label'        => __( 'Checkmark', 'txyz-2025-main-theme' ),
+				'label'        => __( 'Checkmark', 'txyz-main-theme' ),
 				'inline_style' => '
 				ul.is-style-checkmark-list {
 					list-style-type: "\2713";
@@ -36,45 +36,45 @@ if ( ! function_exists( 'txyz_2025_main_theme_block_styles' ) ) :
 		);
 	}
 endif;
-add_action( 'init', 'txyz_2025_main_theme_block_styles' );
+add_action( 'init', 'txyz_main_theme_block_styles' );
 
 // Registers pattern categories.
-if ( ! function_exists( 'txyz_2025_main_theme_pattern_categories' ) ) :
-	function txyz_2025_main_theme_pattern_categories() {
+if ( ! function_exists( 'txyz_main_theme_pattern_categories' ) ) :
+	function txyz_main_theme_pattern_categories() {
 		register_block_pattern_category(
-			'txyz_2025_main_theme_page',
+			'txyz_main_theme_page',
 			array(
-				'label'       => __( 'Pages', 'txyz-2025-main-theme' ),
-				'description' => __( 'A collection of full page layouts.', 'txyz-2025-main-theme' ),
+				'label'       => __( 'Pages', 'txyz-main-theme' ),
+				'description' => __( 'A collection of full page layouts.', 'txyz-main-theme' ),
 			)
 		);
 		register_block_pattern_category(
-			'txyz_2025_main_theme_post-format',
+			'txyz_main_theme_post-format',
 			array(
-				'label'       => __( 'Post formats', 'txyz-2025-main-theme' ),
-				'description' => __( 'A collection of post format patterns.', 'txyz-2025-main-theme' ),
+				'label'       => __( 'Post formats', 'txyz-main-theme' ),
+				'description' => __( 'A collection of post format patterns.', 'txyz-main-theme' ),
 			)
 		);
 	}
 endif;
-add_action( 'init', 'txyz_2025_main_theme_pattern_categories' );
+add_action( 'init', 'txyz_main_theme_pattern_categories' );
 
 // Registers block binding sources.
-if ( ! function_exists( 'txyz_2025_main_theme_register_block_bindings' ) ) :
-	function txyz_2025_main_theme_register_block_bindings() {
+if ( ! function_exists( 'txyz_main_theme_register_block_bindings' ) ) :
+	function txyz_main_theme_register_block_bindings() {
 		register_block_bindings_source(
-			'txyz-2025-main-theme/format',
+			'txyz-main-theme/format',
 			array(
-				'label'              => _x( 'Post format name', 'Label for the block binding placeholder in the editor', 'txyz-2025-main-theme' ),
-				'get_value_callback' => 'txyz_2025_main_theme_format_binding',
+				'label'              => _x( 'Post format name', 'Label for the block binding placeholder in the editor', 'txyz-main-theme' ),
+				'get_value_callback' => 'txyz_main_theme_format_binding',
 			)
 		);
 	}
 endif;
-add_action( 'init', 'txyz_2025_main_theme_register_block_bindings' );
+add_action( 'init', 'txyz_main_theme_register_block_bindings' );
 
-if ( ! function_exists( 'txyz_2025_main_theme_format_binding' ) ) :
-	function txyz_2025_main_theme_format_binding() {
+if ( ! function_exists( 'txyz_main_theme_format_binding' ) ) :
+	function txyz_main_theme_format_binding() {
 		$post_format_slug = get_post_format();
 		if ( $post_format_slug && 'standard' !== $post_format_slug ) {
 			return get_post_format_string( $post_format_slug );

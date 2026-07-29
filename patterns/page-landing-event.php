@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Landing page for event
- * Slug: txyz-2025-main-theme/page-landing-event
- * Categories: txyz_2025_main_theme_page, featured
+ * Slug: txyz-main-theme/page-landing-event
+ * Categories: txyz_main_theme_page, featured
  * Keywords: starter
  * Block Types: core/post-content
  * Post Types: page, wp_template
@@ -16,8 +16,8 @@
 
 ?>
 
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/hero-full-width-image"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/heading-and-paragraph-with-image"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/banner-description-images-grid"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/text-faqs"} /-->
-<!-- wp:pattern {"slug":"txyz-2025-main-theme/contact-centered-social-link"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/hero-full-width-image"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/heading-and-paragraph-with-image"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/banner-description-images-grid"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/text-faqs"} /-->
+<!-- wp:pattern {"slug":"txyz-main-theme/contact-centered-social-link"} /-->

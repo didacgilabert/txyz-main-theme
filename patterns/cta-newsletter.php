@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Newsletter sign-up
- * Slug: txyz-2025-main-theme/cta-newsletter
+ * Slug: txyz-main-theme/cta-newsletter
  * Keywords: call-to-action, newsletter
  * Categories: call-to-action
  *
@@ -16,11 +16,11 @@
 	<!-- wp:group {"style":{"dimensions":{"minHeight":"360px"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center","justifyContent":"center"}} -->
 	<div class="wp-block-group" style="min-height:360px;margin-top:0;margin-bottom:0">
 		<!-- wp:heading {"textAlign":"center","fontSize":"xx-large"} -->
-		<h2 class="wp-block-heading has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'Sign up to get daily stories', 'txyz-2025-main-theme' ); ?></h2>
+		<h2 class="wp-block-heading has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'Sign up to get daily stories', 'txyz-main-theme' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"align":"center","className":"is-style-text-subtitle"} -->
-		<p class="has-text-align-center is-style-text-subtitle"><?php esc_html_e( 'Get access to a curated collection of moments in time featuring photographs from historical relevance.', 'txyz-2025-main-theme' ); ?></p>
+		<p class="has-text-align-center is-style-text-subtitle"><?php esc_html_e( 'Get access to a curated collection of moments in time featuring photographs from historical relevance.', 'txyz-main-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:spacer {"height":"var:preset|spacing|30"} -->
@@ -29,7 +29,7 @@
 
 		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 		<div class="wp-block-buttons"><!-- wp:button {"textAlign":"center"} -->
-			<div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button"><?php esc_html_e( 'Subscribe', 'txyz-2025-main-theme' ); ?></a></div>
+			<div class="wp-block-button"><a class="wp-block-button__link has-text-align-center wp-element-button"><?php esc_html_e( 'Subscribe', 'txyz-main-theme' ); ?></a></div>
 		<!-- /wp:button --></div>
 		<!-- /wp:buttons -->
 	</div>

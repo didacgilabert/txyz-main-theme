@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Vertical header
- * Slug: txyz-2025-main-theme/vertical-header
+ * Slug: txyz-main-theme/vertical-header
  * Categories: header
  * Block Types: core/template-part/vertical-header
  * Description: Vertical Header with site title and navigation

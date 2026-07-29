@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: List of posts, 1 column
- * Slug: txyz-2025-main-theme/template-query-loop
+ * Slug: txyz-main-theme/template-query-loop
  * Categories: query
  * Block Types: core/query
  * Description: A list of posts, 1 column, with featured image and post date.
@@ -28,7 +28,7 @@
 	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 		<!-- wp:query-no-results -->
 		<!-- wp:paragraph -->
-		<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'txyz-2025-main-theme' ); ?></p>
+		<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'txyz-main-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 		<!-- /wp:query-no-results -->
 	</div>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header with large title
- * Slug: txyz-2025-main-theme/header-large-title
+ * Slug: txyz-main-theme/header-large-title
  * Categories: header
  * Block Types: core/template-part/header
  * Description: Header with large site title and right-aligned navigation.

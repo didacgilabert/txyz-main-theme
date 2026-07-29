@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Post with left-aligned content
- * Slug: txyz-2025-main-theme/post-with-left-aligned-content
+ * Slug: txyz-main-theme/post-with-left-aligned-content
  * Template Types: posts, single
  * Viewport width: 1400
  * Inserter: no
@@ -28,7 +28,7 @@
 						<!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"fontSize":"small","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 						<div class="wp-block-group has-small-font-size">
 							<!-- wp:paragraph -->
-							<p><?php echo esc_html_x( 'by', 'Prefix before the author name. The post author name is displayed in a separate block.', 'txyz-2025-main-theme' ); ?></p>
+							<p><?php echo esc_html_x( 'by', 'Prefix before the author name. The post author name is displayed in a separate block.', 'txyz-main-theme' ); ?></p>
 							<!-- /wp:paragraph -->
 							<!-- wp:post-author-name {"isLink":true,"fontSize":"small"} /-->
 						</div>
@@ -53,7 +53,7 @@
 					<div class="wp-block-group alignwide has-small-font-size">
 						<!-- wp:post-date /-->
 						<!-- wp:paragraph -->
-						<p><?php echo esc_html_x( '·', 'Separator between date and categories.', 'txyz-2025-main-theme' ); ?></p>
+						<p><?php echo esc_html_x( '·', 'Separator between date and categories.', 'txyz-main-theme' ); ?></p>
 						<!-- /wp:paragraph -->
 						<!-- wp:post-terms {"term":"category"} /-->
 					</div>
@@ -75,8 +75,8 @@
 		<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)">
 			<!-- wp:group {"align":"wide","style":{"border":{"top":{"color":"var:preset|color|accent-6","width":"1px"},"right":[],"bottom":[],"left":[]}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group alignwide" style="border-top-color:var(--wp--preset--color--accent-6);border-top-width:1px">
-				<!-- wp:group {"ariaLabel":"<?php esc_attr_e( 'Post navigation', 'txyz-2025-main-theme' ); ?>","tagName":"nav","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
-				<nav class="wp-block-group alignwide" aria-label="<?php esc_attr_e( 'Post navigation', 'txyz-2025-main-theme' ); ?>" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
+				<!-- wp:group {"ariaLabel":"<?php esc_attr_e( 'Post navigation', 'txyz-main-theme' ); ?>","tagName":"nav","align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+				<nav class="wp-block-group alignwide" aria-label="<?php esc_attr_e( 'Post navigation', 'txyz-main-theme' ); ?>" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
 					<!-- wp:post-navigation-link {"type":"previous","showTitle":true,"arrow":"arrow"} /-->
 					<!-- wp:post-navigation-link {"showTitle":true,"arrow":"arrow"} /-->
 				</nav>
@@ -99,7 +99,7 @@
 				<!-- /wp:column -->
 				<!-- wp:column {"width":"60%","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}}} -->
 				<div class="wp-block-column" style="padding-top:0;padding-bottom:0;flex-basis:60%">
-					<!-- wp:pattern {"slug":"txyz-2025-main-theme/comments"} /-->
+					<!-- wp:pattern {"slug":"txyz-main-theme/comments"} /-->
 				</div>
 				<!-- /wp:column -->
 			</div>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: front-page
- * Slug: txyz-2025-main-theme/front-page
+ * Slug: txyz-main-theme/front-page
  * Inserter: no
  */
 ?>

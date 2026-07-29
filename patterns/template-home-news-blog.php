@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: News blog home
- * Slug: txyz-2025-main-theme/template-home-news-blog
+ * Slug: txyz-main-theme/template-home-news-blog
  * Template Types: front-page, index, home
  * Viewport width: 1400
  * Inserter: no
@@ -37,7 +37,7 @@
 						<!-- /wp:post-template -->
 						<!-- wp:query-no-results -->
 							<!-- wp:paragraph -->
-							<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'txyz-2025-main-theme' ); ?></p>
+							<p><?php echo esc_html_x( 'Sorry, but nothing was found. Please try a search with different keywords.', 'Message explaining that there are no results returned from a search.', 'txyz-main-theme' ); ?></p>
 							<!-- /wp:paragraph -->
 						<!-- /wp:query-no-results -->
 					</div>

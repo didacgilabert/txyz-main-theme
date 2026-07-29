@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Centered footer
- * Slug: txyz-2025-main-theme/footer-centered
+ * Slug: txyz-main-theme/footer-centered
  * Categories: footer
  * Block Types: core/template-part/footer
  * Description: Footer with centered site title and tagline.
@@ -30,8 +30,8 @@
 		<?php
 		printf(
 			/* translators: Designed with WordPress. %s: WordPress link. */
-			esc_html__( 'Designed with %s', 'txyz-2025-main-theme' ),
-			'<a href="' . esc_url( __( 'https://wordpress.org', 'txyz-2025-main-theme' ) ) . '" rel="nofollow">WordPress</a>'
+			esc_html__( 'Designed with %s', 'txyz-main-theme' ),
+			'<a href="' . esc_url( __( 'https://wordpress.org', 'txyz-main-theme' ) ) . '" rel="nofollow">WordPress</a>'
 		);
 		?>
 	</p>

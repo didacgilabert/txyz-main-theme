@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Grid with videos
- * Slug: txyz-2025-main-theme/grid-videos
+ * Slug: txyz-main-theme/grid-videos
  * Categories: about
  * Description: A grid with videos.
  *
@@ -16,11 +16,11 @@
 	<!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:heading {"textAlign":"left","align":"wide","className":"is-style-text-subtitle","style":{"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"x-large"} -->
-		<h2 class="wp-block-heading alignwide has-text-align-left is-style-text-subtitle has-x-large-font-size"><?php esc_html_e( 'Explore the episodes', 'txyz-2025-main-theme' ); ?></h2>
+		<h2 class="wp-block-heading alignwide has-text-align-left is-style-text-subtitle has-x-large-font-size"><?php esc_html_e( 'Explore the episodes', 'txyz-main-theme' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"className":"is-style-text-annotation"} -->
-		<p class="is-style-text-annotation"><?php esc_html_e( 'Podcast', 'txyz-2025-main-theme' ); ?></p>
+		<p class="is-style-text-annotation"><?php esc_html_e( 'Podcast', 'txyz-main-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->

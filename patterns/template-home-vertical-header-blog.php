@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Homepage for right-aligned blog
- * Slug: txyz-2025-main-theme/template-home-vertical-header-blog
+ * Slug: txyz-main-theme/template-home-vertical-header-blog
  * Template Types: front-page, index, home
  * Viewport width: 1400
  * Inserter: no
@@ -27,12 +27,12 @@
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
-			<!-- wp:pattern {"slug":"txyz-2025-main-theme/hidden-blog-heading"} /-->
+			<!-- wp:pattern {"slug":"txyz-main-theme/hidden-blog-heading"} /-->
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
 
-			<!-- wp:pattern {"slug":"txyz-2025-main-theme/template-query-loop-vertical-header-blog"} /-->
+			<!-- wp:pattern {"slug":"txyz-main-theme/template-query-loop-vertical-header-blog"} /-->
 
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>

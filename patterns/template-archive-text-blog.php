@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Text-only blog, archive
- * Slug: txyz-2025-main-theme/template-archive-text-blog
+ * Slug: txyz-main-theme/template-archive-text-blog
  * Template Types: archive
  * Viewport width: 1400
  * Inserter: no
@@ -21,7 +21,7 @@
 	<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 	<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 	<!-- /wp:spacer -->
-	<!-- wp:pattern {"slug":"txyz-2025-main-theme/template-query-loop-text-blog"} /-->
+	<!-- wp:pattern {"slug":"txyz-main-theme/template-query-loop-text-blog"} /-->
 </main>
 <!-- /wp:group -->
 

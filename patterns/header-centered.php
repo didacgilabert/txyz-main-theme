@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Centered header
- * Slug: txyz-2025-main-theme/header-centered
+ * Slug: txyz-main-theme/header-centered
  * Categories: header
  * Block Types: core/template-part/header
  * Description: Header with centered site title and navigation.

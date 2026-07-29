@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Comments
- * Slug: txyz-2025-main-theme/comments
+ * Slug: txyz-main-theme/comments
  * Description: Comments area with comments list, pagination, and comment form.
  * Categories: text
  * Block Types: core/comments
@@ -15,7 +15,7 @@
 <!-- wp:comments {"className":"wp-block-comments-query-loop","style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}}} -->
 <div class="wp-block-comments wp-block-comments-query-loop" style="margin-top:var(--wp--preset--spacing--70);margin-bottom:var(--wp--preset--spacing--70)">
 	<!-- wp:heading {"fontSize":"x-large"} -->
-	<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Comments', 'txyz-2025-main-theme' ); ?></h2>
+	<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Comments', 'txyz-main-theme' ); ?></h2>
 	<!-- /wp:heading -->
 	<!-- wp:comments-title {"level":3,"fontSize":"large"} /-->
 	<!-- wp:comment-template -->

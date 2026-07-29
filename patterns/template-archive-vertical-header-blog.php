@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Archive for the right-aligned blog
- * Slug: txyz-2025-main-theme/template-archive-vertical-header-blog
+ * Slug: txyz-main-theme/template-archive-vertical-header-blog
  * Template Types: archive
  * Viewport width: 1400
  * Inserter: no
@@ -33,7 +33,7 @@
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
 
-			<!-- wp:pattern {"slug":"txyz-2025-main-theme/template-query-loop-vertical-header-blog"} /-->
+			<!-- wp:pattern {"slug":"txyz-main-theme/template-query-loop-vertical-header-blog"} /-->
 
 			<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 			<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>

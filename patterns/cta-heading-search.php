@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Heading and search form
- * Slug: txyz-2025-main-theme/cta-heading-search
+ * Slug: txyz-main-theme/cta-heading-search
  * Categories: call-to-action
  * Description: Large heading with a search form for quick navigation.
  *
@@ -15,10 +15,10 @@
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:heading {"fontSize":"xx-large"} -->
-		<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'What are you looking for?', 'txyz-2025-main-theme' ); ?></h2>
+		<h2 class="wp-block-heading has-xx-large-font-size"><?php esc_html_e( 'What are you looking for?', 'txyz-main-theme' ); ?></h2>
 		<!-- /wp:heading -->
 
-		<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'Search form label.', 'txyz-2025-main-theme' ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr_x( 'Type here...', 'Search input field placeholder text.', 'txyz-2025-main-theme' ); ?>","buttonText":"<?php echo esc_attr_x( 'Search', 'Button text. Verb.', 'txyz-2025-main-theme' ); ?>"} /-->
+		<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'Search form label.', 'txyz-main-theme' ); ?>","showLabel":false,"placeholder":"<?php echo esc_attr_x( 'Type here...', 'Search input field placeholder text.', 'txyz-main-theme' ); ?>","buttonText":"<?php echo esc_attr_x( 'Search', 'Button text. Verb.', 'txyz-main-theme' ); ?>"} /-->
 	</div>
 	<!-- /wp:group -->
 </div>

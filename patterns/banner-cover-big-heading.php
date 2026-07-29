@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Cover with big heading
- * Slug: txyz-2025-main-theme/banner-cover-big-heading
+ * Slug: txyz-main-theme/banner-cover-big-heading
  * Categories: banner, about, featured
  * Description: A full-width cover section with a large background image and an oversized heading.
  *
@@ -17,14 +17,14 @@
 	<div class="wp-block-group alignwide">
 		<!-- wp:image {"sizeSlug":"full","linkDestination":"none","align":"wide"} -->
 		<figure class="wp-block-image alignwide size-full">
-			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/coming-soon-bg-image.webp" alt="<?php esc_attr_e( 'Photo of a field full of flowers, a blue sky and a tree.', 'txyz-2025-main-theme' ); ?>"/>
+			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/coming-soon-bg-image.webp" alt="<?php esc_attr_e( 'Photo of a field full of flowers, a blue sky and a tree.', 'txyz-main-theme' ); ?>"/>
 		</figure>
 		<!-- /wp:image -->
 
 		<!-- wp:group {"align":"full","layout":{"type":"default"}} -->
 		<div class="wp-block-group alignfull">
 			<!-- wp:heading {"align":"left","style":{"typography":{"fontSize":"clamp(1rem, 380px, 24vw)","letterSpacing":"-0.02em","lineHeight":"1","fontWeight":"700","fontStyle":"normal"}}} -->
-			<h2 class="wp-block-heading has-text-align-left" style="font-size:clamp(1rem, 380px, 24vw);font-style:normal;font-weight:700;letter-spacing:-0.02em;line-height:1"><?php echo esc_html_e( 'Stories', 'txyz-2025-main-theme' ); ?></h2>
+			<h2 class="wp-block-heading has-text-align-left" style="font-size:clamp(1rem, 380px, 24vw);font-style:normal;font-weight:700;letter-spacing:-0.02em;line-height:1"><?php echo esc_html_e( 'Stories', 'txyz-main-theme' ); ?></h2>
 			<!-- /wp:heading -->
 
 		</div>

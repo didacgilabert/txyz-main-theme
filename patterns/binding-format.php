@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Post format name
- * Slug: txyz-2025-main-theme/binding-format
- * Categories: txyz_2025_main_theme_post-format
+ * Slug: txyz-main-theme/binding-format
+ * Categories: txyz_main_theme_post-format
  * Description: Prints the name of the post format with the help of the Block Bindings API.
  *
  * @package WordPress
@@ -11,6 +11,6 @@
  */
 
 ?>
-<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"txyz-2025-main-theme/format"}}},"fontSize":"small"} -->
+<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"txyz-main-theme/format"}}},"fontSize":"small"} -->
 <p class="has-small-font-size"></p>
 <!-- /wp:paragraph -->

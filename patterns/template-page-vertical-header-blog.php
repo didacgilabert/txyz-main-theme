@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Page template for the right-aligned blog
- * Slug: txyz-2025-main-theme/template-page-vertical-header-blog
+ * Slug: txyz-main-theme/template-page-vertical-header-blog
  * Template Types: page
  * Viewport width: 1400
  *
