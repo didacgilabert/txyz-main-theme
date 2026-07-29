@@ -226,6 +226,7 @@ require_once get_template_directory() . '/inc/archive-dynamic-cta.php';
 // require_once get_template_directory() . '/inc/related-filters.php';
 require_once get_template_directory() . '/inc/related-to-article.php';
 require_once get_template_directory() . '/inc/avoid-mail-spam.php';
+require_once get_template_directory() . '/inc/updater.php';
 
 
 /*-----------------------------------------------------------------------------------------------*
