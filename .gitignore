@@ -1,0 +1,18 @@
+# Finder i sistema
+.DS_Store
+Thumbs.db
+
+# Dependències, si algun dia n'hi ha
+node_modules/
+vendor/
+
+# Coses que no s'han de versionar mai
+*.log
+*.zip
+*.sql
+.env
+.env.*
+
+# Editors
+.idea/
+.vscode/
