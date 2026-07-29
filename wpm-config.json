@@ -1,0 +1,79 @@
+{
+  "post_types": {
+    "page": {},
+    "post": {},
+    "work": {},
+    "workshops": {},
+    "labs": {},
+    "authors": {},
+    "pro": {},
+    "pings": {},
+    "module": {},
+    "redirect": {},
+    "attachment": {},
+    "nav_menu_item": {
+      "attr_title": {},
+      "title": {}
+    },
+    "any": {},
+    "customize_changeset": null,
+    "revision": null
+  },
+  "post_fields": {
+  "excerpt" : {},
+  "_secondary_title" : {},
+  "_wp_attachment_image_alt": {}
+},
+  "taxonomies": {
+    "category" : {},
+    "post_tag" : {},
+    "location" : {},
+    "project": {},
+    "work-output": {},
+    "work-focus": {},
+    "work-genre": {},
+    "work-detail": {},
+    "work-language": {},
+    "workshop-focus": {},
+    "workshop-level": {},
+    "collaborate-as": {},
+    "state": {},
+    "lab-focus": {}
+  },
+  "term_fields": {},
+  "user_fields": {
+    "description": {}
+  },  
+  "comment_fields": {},
+  "admin_pages": [
+    "upload",
+    "nav-menus",
+    "options-general",
+    "widgets",
+    "settings-network",
+    "site-settings-network"
+  ],
+  "options": {
+    "blogname": {},
+    "blogdescription": {}
+  },
+  "site_options": {
+    "site_name": {},
+    "welcome_email": {},
+    "first_post": {},
+    "welcome_user_email": {},
+    "first_page": {},
+    "first_comment": {}
+  },
+  "widgets": {
+    "media_image": {
+      "caption": {},
+      "alt": {},
+      "image_title": {}
+    },
+    "custom_html": {
+      "content": {}
+    }
+  },
+  "admin_html_tags": {}
+}

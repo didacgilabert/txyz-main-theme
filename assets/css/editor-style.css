@@ -1,0 +1,43 @@
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+a {
+	text-decoration-thickness: 1px !important;
+	text-underline-offset: .1em;
+}
+
+
+
+.wpm-switcher-list {
+	list-style:none;
+	padding-left: 0rem !important;
+	line-height: 0.6rem;
+	display: flex;
+	font-size: 1rem;
+}
+
+.wpm-switcher-list ul {
+	list-style-type: none; /* Remove default list markers */
+	padding-left: 0; /* Optional: remove padding from the list */
+	margin-left: 0; /* Optional: adjust margins if needed */
+  }
+  
+  .wpm-switcher-list ul li::marker {
+	content: ""; /* Remove any content that could appear */
+  }
+
+
+.wpm-switcher-list li {
+	padding-right: 0.5rem;
+}
+
+.wpm-switcher-list li.active a,
+.wpm-switcher-list li.active>span {
+  color: inherit;
+  font-weight: 600;
+}
+
+.wpm-switcher-list li a{
+  color:var( --wp--preset--color--base );
+}

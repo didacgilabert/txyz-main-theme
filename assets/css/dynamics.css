@@ -1,0 +1,122 @@
+/* ---------------
+
+DYNAMICS CSS 
+
+	1. News Marquee
+	2. Bpuncing Marquee
+	3. Dynamic Cover 
+	4. Hue Line Video
+	5. Related Projects
+
+----------------- */
+
+
+
+
+
+/* 2. BOUNCING MARQUEE */
+
+
+.marquee{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+@keyframes marquee {
+	0% { left: 80%; }
+	50% { left: -20%; }
+	100% { left: 80%; }
+}
+
+
+.marquee-text {
+	position: relative;
+	overflow: visible;
+	animation: marquee 24s linear infinite;
+	white-space: nowrap;
+}
+
+
+@keyframes marquee-inv {
+	0% { left: -80%; }
+	50% { left:  20%; }
+	100% { left: -80%; }
+}
+ 
+.marquee-text-inv {
+	position: relative;
+	overflow: visible;
+	animation: marquee-inv 36s linear infinite;
+	white-space: nowrap;
+	margin-top: 6rem;
+}
+
+
+/* 3. Dynamic Cover  */
+
+.cover-dynamic.wp-block-cover {
+  min-height: 150px;
+
+}
+
+.cover-dynamic {
+	animation: mymove 7s infinite;
+}
+
+.dynamic-cover {
+	animation: mymove 7s infinite;
+}
+
+.dinamic-cover-stack {
+	gap: 0;
+}
+
+.dinamic-cover-heading {
+	font-size: var(--wp--preset--font-size--extra-large);
+	font-weight: 800;
+}
+
+.dinamic-cover-tagline {
+	text-transform: uppercase;
+	font-size: var(--wp--preset--font-size--small);
+	letter-spacing: 2px;
+}
+
+
+@keyframes mymove {
+  50% {
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);
+  }
+}
+
+
+
+/* 4.  hue-line-video */  
+
+@keyframes hue-line-video {
+	from {
+		filter: invert(80%) hue-rotate(0deg);
+	}
+	to {
+		filter: invert(80%) hue-rotate(360deg);
+	}
+}
+  
+.wp-block-cover__video-background.intrinsic-ignore {
+	animation: hue-line-video 5s ease alternate infinite;
+}
+
+
+/* 5. Related Projects */  
+
+@keyframes hue-related-project {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(-90deg);
+	}
+}

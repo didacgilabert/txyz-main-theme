@@ -1,0 +1,203 @@
+/* ---------------
+
+T.XYZ styles varitions
+
+This CSS is only for troposfera.xyz not for the subdomins.
+
+
+1. Home
+2. Main Tilte & Secondary Titles Exeptions
+3. Direct Menus to projects foor footer multilingual
+
+----------------- */
+
+
+
+
+/* 1. Home */
+
+.video-home {
+	z-index: -1;
+  }
+
+/* 2. Main Tilte & Secondary Titles Exeptions */
+
+.archive h1 .secondary-title {
+	font-size: 100%;
+	display: inline;
+}  
+
+.firts-blog-page-content .main-title{
+	order: 1; 
+	font-weight: inherit;
+}
+
+.firts-blog-page-content .secondary-title{
+	order: 2;
+	font-weight: 300;
+	font-size: 66%;
+}
+
+.page .secondary-title {
+	order: 1;
+	font-weight: inherit;
+}
+
+.page .main-title {
+	order: 2; 
+	font-weight: 300;
+}
+
+.horizontal-loop .main-title, 
+.type-work .main-title,
+.single-work .main-title,
+.type-labs .main-title,
+.single-labs .main-title {
+	order: 1;
+	font-weight: inherit;
+}
+
+.horizontal-loop .secondary-title, 
+.type-work .secondary-title,
+.single-work .secondary-title,
+.type-labs .secondary-title,
+.single-labs .secondary-title {
+	order: 2;
+	font-size: 90%;
+	font-weight: 300;
+}
+
+.type-workshops .main-title,
+.invert-title-order .main-title {
+	order: 2;
+	font-size: 66%;
+	font-weight: 300;
+}
+
+.type-workshops .secondary-title,
+.invert-title-order .secondary-title {
+	order: 1; 
+	font-weight: inherit;
+	font-size: 100%;
+}
+
+.sub-menu .secondary-title{
+	display:none;
+}
+
+.single-workshops .main-title {
+	order: 2;
+	font-size: 90%;
+	font-weight: 300;
+}
+
+.single-workshops .secondary-title {
+	order: 1;
+	font-size: 100%;
+	font-weight: inherit;
+}
+
+
+
+/*  2. Direct Menus to projects foor footer multilingual  */
+
+#menu-direct-work,
+#menu-direct-workshops,
+#menu-direct-labs,
+#menu-direct-to-articles,
+#menu-featured-filters-blog {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+.menu-direct-to-articles-container .menu-item {
+	display: block;
+}
+  
+.menu-direct-to-articles-container > ul > li {
+	max-width: 240px;
+	white-space: nowrap;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+}
+
+.menu-direct-to-articles-container  a {
+	padding: 7px 0;
+}
+
+/* Add more styles as needed */
+  
+
+.menu-featured-filters-blog-container .menu-item {
+	display: block;
+}
+  
+.menu-featured-filters-blog-container > ul > li {
+	white-space: nowrap;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+}
+
+.menu-featured-filters-blog-container a {
+	padding: 7px 0;
+}
+
+/*TESTING MENUS */
+
+#menu-direct-to-de-projects {
+	padding: 0;
+	list-style: none;
+	font-size: var(--wp--preset--font-size--small);
+}
+
+#menu-direct-to-de-projects ul > li {
+	padding-left: 0;
+}
+
+#menu-direct-to-de-projects a {
+	padding: 7px 0;
+}
+
+
+/* 
+BLENDED
+MENU 
+*/
+
+
+.blend-menu.wp-block-senff-sticky-block {
+	mix-blend-mode: difference;
+}
+.blend-menu.wp-block-senff-sticky-block .wp-block-navigation__responsive-container-open,
+.blend-menu.wp-block-senff-sticky-block .wp-block-navigation-item__label,
+.blend-menu.wp-block-senff-sticky-block img {
+		filter: invert(1);  
+  }
+
+.blend-my-work{
+	mix-blend-mode: difference;
+}
+
+.wp-block-navigation__responsive-container-content {
+  }
+
+.wp-block-navigation__container.has-large-font-size.is-responsive.items-justified-right.no-wrap.wp-block-navigation{
+  } 
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation a{
+	text-decoration: none;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open  .blend-my-work{
+	mix-blend-mode: none;
+}
+
+.revert-z-index > .wp-block-cover__inner-container.has-global-padding.is-layout-constrained.wp-block-cover-is-layout-constrained {
+	z-index: revert;
+}
