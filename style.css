@@ -7,7 +7,7 @@ Description: Tema de blocs del lloc principal de troposfera.xyz.
 Requires at least: 6.7
 Tested up to: 6.7
 Requires PHP: 7.2
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: txyz-main-theme
@@ -2219,4 +2219,35 @@ h3.highly-related {
 .txyz-close h2 {
 	max-width: 22ch;
 	text-wrap: balance;
+}
+
+
+/* --- Fitxa tècnica ----------------------------------------- */
+/* Pattern txyz-main-theme/spec-basic-info. El markup no porta cap
+   valor, tot surt d'aquí, i un canvi mou totes les fitxes inserides. */
+
+.txyz-spec {
+	gap: var(--wp--preset--spacing--40);
+	margin-block-end: var(--wp--preset--spacing--70);
+}
+
+.txyz-spec .wp-block-column {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	border-block-start: 1px solid var(--wp--preset--color--accent-4);
+	padding-block-start: var(--wp--preset--spacing--30);
+}
+
+.txyz-spec__label {
+	margin: 0;
+	font-family: var(--wp--preset--font-family--jetbrains-mono);
+	font-size: var(--wp--preset--font-size--x-small);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.txyz-spec__value {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--medium);
 }
