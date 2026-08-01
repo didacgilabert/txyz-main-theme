@@ -7,7 +7,7 @@ Description: Tema de blocs del lloc principal de troposfera.xyz.
 Requires at least: 6.7
 Tested up to: 6.7
 Requires PHP: 7.2
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: txyz-main-theme
@@ -2250,4 +2250,156 @@ h3.highly-related {
 .txyz-spec__value {
 	margin: 0;
 	font-size: var(--wp--preset--font-size--medium);
+}
+
+
+/* --- Commutador de mode de color --------------------------- */
+/* Dues formes, la mateixa feina. Les paletes surten de
+   styles/colors/*.json i les genera functions.php, aquí només l'aspecte.
+
+   A · interruptor de tres posicions   [■  ] [ ■ ] [  ■]
+   B · botó sol amb el nom que passa   ▪ night                          */
+
+.txyz-theme-switch,
+.txyz-theme-pulse {
+	display: inline-flex;
+	align-items: center;
+	font-family: var(--wp--preset--font-family--jetbrains-mono);
+	font-size: var(--wp--preset--font-size--x-small);
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+
+/* A · Interruptor. Carril amb fons i tres caselles, la del mode actiu plena.
+      Al costat, el nom del mode s'escriu lletra a lletra i desapareix. */
+
+.txyz-theme-switch {
+	gap: 0.6em;
+}
+
+.txyz-theme-switch__track {
+	display: inline-flex;
+	align-items: center;
+	gap: 0;
+	padding: 2px;
+	border: 1px solid currentColor;
+	background: var(--wp--preset--color--accent-8);
+}
+
+/* El rastre reserva alçada però no amplada, així res no es mou en escriure's. */
+.txyz-theme-switch__flash {
+	min-height: 1em;
+	white-space: nowrap;
+	pointer-events: none;
+}
+
+.txyz-theme-switch__flash::after {
+	content: "";
+	display: inline-block;
+	width: 0.5em;
+	height: 1em;
+	margin-inline-start: 0.15em;
+	background: currentColor;
+	vertical-align: text-bottom;
+	opacity: 0;
+}
+
+.txyz-theme-switch.is-typing .txyz-theme-switch__flash::after {
+	opacity: 1;
+	animation: txyz-cursor 700ms steps(1) infinite;
+}
+
+@keyframes txyz-cursor {
+	50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.txyz-theme-switch.is-typing .txyz-theme-switch__flash::after {
+		animation: none;
+	}
+}
+
+/* appearance: none és obligatori. Sense això, els botons de macOS
+   conserven la forma de pastilla encara que els treguis la vora. */
+.txyz-theme-switch button[data-mode] {
+	appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 1.6em;
+	height: 1em;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	transition: background-color 160ms ease;
+}
+
+.txyz-theme-switch button[data-mode][aria-pressed="true"] {
+	background: currentColor;
+}
+
+.txyz-theme-switch button[data-mode]:hover {
+	background: var(--wp--preset--color--accent-1);
+}
+
+.txyz-theme-switch button[data-mode]:focus-visible {
+	outline: 1px solid var(--wp--preset--color--accent-1);
+	outline-offset: 2px;
+}
+
+.txyz-theme-switch__label {
+	margin-inline-start: 0.6em;
+}
+
+
+/* B · Botó sol. El nom del mode apareix en clicar i s'esvaeix. */
+
+.txyz-theme-pulse {
+	gap: 0.5em;
+}
+
+.txyz-theme-pulse button.txyz-theme-pulse__btn {
+	appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 1.05em;
+	height: 1.05em;
+	margin: 0;
+	padding: 0;
+	border: 1px solid currentColor;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	transition: background-color 160ms ease;
+}
+
+.txyz-theme-pulse__btn:hover {
+	background: var(--wp--preset--color--accent-1);
+	border-color: var(--wp--preset--color--accent-1);
+}
+
+.txyz-theme-pulse__btn:focus-visible {
+	outline: 1px solid var(--wp--preset--color--accent-1);
+	outline-offset: 2px;
+}
+
+.txyz-theme-pulse__flash {
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 500ms ease;
+}
+
+.txyz-theme-pulse.is-showing .txyz-theme-pulse__flash {
+	opacity: 1;
+	transition-duration: 120ms;
 }

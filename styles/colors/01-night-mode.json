@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+	"version": 3,
+	"title": "Night Mode",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "color": "#181819", "name": "Base » Abyss Black", "slug": "base" },
+				{ "color": "#efe8e8", "name": "Contrast » Mist Air Grey", "slug": "contrast" },
+				{ "color": "hsl(17, 100%, 61%)", "name": "Accent 1 » Sunglight Orange", "slug": "accent-1" },
+				{ "color": "hsl(45, 100%, 61%)", "name": "Accent 2 » Sunglow Yellow", "slug": "accent-2" },
+				{ "color": "#080809", "name": "Accent 3 » Darkness Black", "slug": "accent-3" },
+				{ "color": "#867979", "name": "Accent 4 » City Smog Grey", "slug": "accent-4" },
+				{ "color": "#FEFCFA", "name": "Accent 5 » Moonlight White", "slug": "accent-5" },
+				{ "color": "hsl(17, 100%, 75%)", "name": "Accent 6 » Magmalight Orange", "slug": "accent-6" },
+				{ "color": "hsl(45, 100%, 75%)", "name": "Accent 7 » Starlight Yellow", "slug": "accent-7" },
+				{ "color": "color-mix(in srgb, currentColor 20%, transparent)", "name": "Accent 8", "slug": "accent-8" },
+				{ "color": "hsl(0, 6%, 78%)", "name": "Fog Grey 1", "slug": "grey-1" },
+				{ "color": "hsl(0, 6%, 64%)", "name": "Fog Grey 2", "slug": "grey-2" },
+				{ "color": "hsl(0, 6%, 30%)", "name": "Fog Grey 3", "slug": "grey-3" },
+				{ "color": "#efe8e8", "name": "Props", "slug": "taxonomy-props-txyz" },
+				{ "color": "hsl(30, 100%, 75%)", "name": "Actions", "slug": "taxonomy-actions-txyz" },
+				{ "color": "hsl(0, 100%, 75%)", "name": "Body / Space", "slug": "taxonomy-body-space-txyz" },
+				{ "color": "hsl(17, 100%, 75%)", "name": "Tags", "slug": "taxonomy-tags-txyz" },
+				{ "color": "hsl(250, 100%, 75%)", "name": "N° of Jugglers", "slug": "taxonomy-number-of-jugglers-txyz" },
+				{ "color": "hsl(230, 100%, 75%)", "name": "Body Spins", "slug": "taxonomy-body-spins-txyz" },
+				{ "color": "hsl(130, 100%, 75%)", "name": "N° of Objects", "slug": "taxonomy-number-of-objects-txyz" },
+				{ "color": "hsl(150, 100%, 75%)", "name": "Siteswap", "slug": "taxonomy-siteswap-txyz" },
+				{ "color": "hsl(170, 100%, 75%)", "name": "Object Spins", "slug": "taxonomy-object-spins-txyz" }
+			]
+		}
+	}
+}

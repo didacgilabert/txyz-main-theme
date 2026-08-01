@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/wp/7.0/theme.json",
+	"version": 3,
+	"title": "Fog Mode",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "color": "hsl(0, 0%, 92%)", "name": "Base » Fog Light", "slug": "base" },
+				{ "color": "hsl(0, 0%, 9%)", "name": "Contrast » Fog Dark", "slug": "contrast" },
+				{ "color": "hsl(0, 0%, 61%)", "name": "Accent 1", "slug": "accent-1" },
+				{ "color": "hsl(0, 0%, 61%)", "name": "Accent 2", "slug": "accent-2" },
+				{ "color": "hsl(0, 0%, 99%)", "name": "Accent 3", "slug": "accent-3" },
+				{ "color": "hsl(0, 0%, 50%)", "name": "Accent 4", "slug": "accent-4" },
+				{ "color": "hsl(0, 0%, 3%)", "name": "Accent 5", "slug": "accent-5" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "Accent 6", "slug": "accent-6" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "Accent 7", "slug": "accent-7" },
+				{ "color": "color-mix(in srgb, currentColor 20%, transparent)", "name": "Accent 8", "slug": "accent-8" },
+				{ "color": "hsl(0, 0%, 78%)", "name": "Fog Grey 1", "slug": "grey-1" },
+				{ "color": "hsl(0, 0%, 64%)", "name": "Fog Grey 2", "slug": "grey-2" },
+				{ "color": "hsl(0, 0%, 30%)", "name": "Fog Grey 3", "slug": "grey-3" },
+				{ "color": "hsl(0, 0%, 9%)", "name": "Props", "slug": "taxonomy-props-txyz" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "Actions", "slug": "taxonomy-actions-txyz" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "Body / Space", "slug": "taxonomy-body-space-txyz" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "Tags", "slug": "taxonomy-tags-txyz" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "N° of Jugglers", "slug": "taxonomy-number-of-jugglers-txyz" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "Body Spins", "slug": "taxonomy-body-spins-txyz" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "N° of Objects", "slug": "taxonomy-number-of-objects-txyz" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "Siteswap", "slug": "taxonomy-siteswap-txyz" },
+				{ "color": "hsl(0, 0%, 75%)", "name": "Object Spins", "slug": "taxonomy-object-spins-txyz" }
+			]
+		}
+	}
+}

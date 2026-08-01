@@ -82,6 +82,21 @@
 					"slug": "accent-8"
 				},
 				{
+					"color": "hsl(0, 6%, 78%)",
+					"name": "Fog Grey 1",
+					"slug": "grey-1"
+				},
+				{
+					"color": "hsl(0, 6%, 64%)",
+					"name": "Fog Grey 2",
+					"slug": "grey-2"
+				},
+				{
+					"color": "hsl(0, 6%, 30%)",
+					"name": "Fog Grey 3",
+					"slug": "grey-3"
+				},
+				{
 					"color": "#181819",
 					"name": "Props",
 					"slug": "taxonomy-props-txyz"

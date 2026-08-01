@@ -384,3 +384,203 @@ add_action('admin_head', function() {
     </style>
     <?php
 });
+
+
+/*	-----------------------------------------------------------------------------------------------
+	MODES DE COLOR » clar · night · fog
+
+	El visitant tria, i la tria es queda al seu navegador. Les paletes no
+	s'escriuen aquí: surten dels mateixos JSON que fan de variació al Site
+	Editor, així que ajustar un color en aquells fitxers mou les dues coses.
+
+	El mode clar és la paleta de theme.json i no necessita cap regla.
+--------------------------------------------------------------------------------------------------- */
+
+function txyz_modes_de_color() {
+	return array(
+		'night' => 'styles/colors/01-night-mode.json',
+		'fog'   => 'styles/colors/02-fog-mode.json',
+	);
+}
+
+/**
+ * Llegeix la paleta de cada variació i la converteix en variables CSS.
+ * Tot el tema fa servir var(--wp--preset--color--*), de manera que
+ * redefinir-les aquí canvia el web sencer.
+ */
+function txyz_modes_de_color_css() {
+	$css = '';
+
+	foreach ( txyz_modes_de_color() as $mode => $fitxer ) {
+		$ruta = get_theme_file_path( $fitxer );
+
+		if ( ! is_readable( $ruta ) ) {
+			continue;
+		}
+
+		$dades  = json_decode( file_get_contents( $ruta ), true );
+		$paleta = isset( $dades['settings']['color']['palette'] ) ? $dades['settings']['color']['palette'] : array();
+
+		if ( ! $paleta ) {
+			continue;
+		}
+
+		$regles = '';
+		foreach ( $paleta as $color ) {
+			if ( empty( $color['slug'] ) || ! isset( $color['color'] ) ) {
+				continue;
+			}
+			$regles .= sprintf( '--wp--preset--color--%s:%s;', $color['slug'], $color['color'] );
+		}
+
+		$css .= sprintf( ':root[data-theme="%s"]{%s}', $mode, $regles );
+	}
+
+	return $css;
+}
+
+/**
+ * Posa l'atribut abans que el navegador pinti res, perquè qui hagi triat
+ * night no vegi la pàgina clara una estona i després enfosquir-se.
+ *
+ * Sense tria guardada no escriu res, i el web es veu tal com sempre.
+ * El mode del sistema operatiu no decideix, decideix el visitant.
+ */
+function txyz_modes_de_color_script_capcalera() {
+	?>
+<script>
+(function () {
+	var mode = null;
+	try { mode = localStorage.getItem( 'txyz-mode-color' ); } catch ( e ) {}
+
+	/* Per heretar el mode del sistema operatiu quan no hi ha tria feta,
+	   descomenta aquestes tres línies. Compte que aleshores qui tingui
+	   l'ordinador en fosc veurà el web en night sense haver-ho demanat.
+
+	if ( mode !== 'night' && mode !== 'fog' && window.matchMedia && window.matchMedia( '(prefers-color-scheme: dark)' ).matches ) {
+		mode = 'night';
+	}
+	*/
+
+	if ( mode === 'night' || mode === 'fog' ) {
+		document.documentElement.setAttribute( 'data-theme', mode );
+	}
+})();
+</script>
+	<?php
+}
+add_action( 'wp_head', 'txyz_modes_de_color_script_capcalera', 1 );
+
+/**
+ * El CSS de les paletes i el codi del botó. Va després dels estils
+ * globals de WordPress perquè el pugui sobreescriure.
+ */
+function txyz_modes_de_color_capcalera() {
+	$css = txyz_modes_de_color_css();
+
+	if ( $css ) {
+		printf( "<style id=\"txyz-modes-de-color\">%s</style>\n", $css );
+	}
+	?>
+<script>
+(function () {
+	var clau = 'txyz-mode-color';
+	var noms = { light: 'Day', night: 'Night', fog: 'Fog' };
+
+	function actual() {
+		var m = document.documentElement.getAttribute( 'data-theme' );
+		return ( m === 'night' || m === 'fog' ) ? m : 'light';
+	}
+
+	// Manté tots els commutadors dient el mateix, n'hi hagi un o quatre.
+	function pinta() {
+		var ara = actual();
+		document.querySelectorAll( '.txyz-theme-switch' ).forEach( function ( grup ) {
+			grup.querySelectorAll( '[data-mode]' ).forEach( function ( punt ) {
+				punt.setAttribute( 'aria-pressed', punt.getAttribute( 'data-mode' ) === ara ? 'true' : 'false' );
+			} );
+			var etiqueta = grup.querySelector( '.txyz-theme-switch__label' );
+			if ( etiqueta ) {
+				etiqueta.textContent = noms[ ara ];
+			}
+		} );
+	}
+
+	// Escriu el nom lletra a lletra i el deixa marxar.
+	function teclegia( grup, text ) {
+		var camp = grup.querySelector( '.txyz-theme-switch__flash' );
+		if ( ! camp ) {
+			return;
+		}
+
+		clearInterval( camp.dataset.i );
+		clearTimeout( camp.dataset.t );
+
+		camp.textContent = '';
+		grup.classList.add( 'is-typing' );
+
+		var i = 0;
+		camp.dataset.i = setInterval( function () {
+			camp.textContent = text.slice( 0, ++i );
+			if ( i >= text.length ) {
+				clearInterval( camp.dataset.i );
+				camp.dataset.t = setTimeout( function () {
+					camp.textContent = '';
+					grup.classList.remove( 'is-typing' );
+				}, 900 );
+			}
+		}, 55 );
+	}
+
+	function aplica( mode ) {
+		if ( mode === 'light' ) {
+			document.documentElement.removeAttribute( 'data-theme' );
+		} else {
+			document.documentElement.setAttribute( 'data-theme', mode );
+		}
+		try { localStorage.setItem( clau, mode ); } catch ( e ) {}
+		pinta();
+	}
+
+	// Delegació, perquè el commutador pot ser a qualsevol lloc i arribar tard.
+	document.addEventListener( 'click', function ( e ) {
+
+		// Interruptor de tres posicions: cada casella va al seu mode.
+		var casella = e.target.closest( '.txyz-theme-switch [data-mode]' );
+		if ( casella ) {
+			var mode = casella.getAttribute( 'data-mode' );
+			aplica( mode );
+			teclegia( casella.closest( '.txyz-theme-switch' ), noms[ mode ] );
+			return;
+		}
+
+		// Botó sol: roda de mode i escup el nom, que s'esvaeix tot sol.
+		var boto = e.target.closest( '.txyz-theme-pulse__btn' );
+		if ( boto ) {
+			var ordre = [ 'light', 'night', 'fog' ];
+			var nou   = ordre[ ( ordre.indexOf( actual() ) + 1 ) % ordre.length ];
+			aplica( nou );
+
+			var caixa = boto.closest( '.txyz-theme-pulse' );
+			var rastre = caixa.querySelector( '.txyz-theme-pulse__flash' );
+			if ( rastre ) {
+				rastre.textContent = noms[ nou ];
+				caixa.classList.add( 'is-showing' );
+				clearTimeout( caixa.dataset.t );
+				caixa.dataset.t = setTimeout( function () {
+					caixa.classList.remove( 'is-showing' );
+				}, 1600 );
+			}
+		}
+	} );
+
+	if ( document.readyState === 'loading' ) {
+		document.addEventListener( 'DOMContentLoaded', pinta );
+	} else {
+		pinta();
+	}
+})();
+</script>
+	<?php
+}
+add_action( 'wp_head', 'txyz_modes_de_color_capcalera', 20 );
